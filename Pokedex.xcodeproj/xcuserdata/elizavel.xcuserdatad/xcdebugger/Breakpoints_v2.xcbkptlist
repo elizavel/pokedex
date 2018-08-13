@@ -2,4 +2,101 @@
 <Bucket
    type = "1"
    version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Pokedex/ViewController.swift"
+            timestampString = "555860468.763847"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "15"
+            endingLineNumber = "15"
+            landmarkName = "ViewController"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Pokedex.ViewController.pokemon.setter : Swift.Array&lt;Pokedex.Pokemon&gt;"
+                  moduleName = "Pokedex"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/elizavel/Documents/workspace/Pokedex/Pokedex/ViewController.swift"
+                  timestampString = "555861213.039317"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "15"
+                  endingLineNumber = "15"
+                  offsetFromSymbolStart = "65">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Pokedex.ViewController.init (nibName : Swift.Optional&lt;Swift.String&gt;, bundle : Swift.Optional&lt;__ObjC.NSBundle&gt;) -&gt; Pokedex.ViewController"
+                  moduleName = "Pokedex"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/elizavel/Documents/workspace/Pokedex/Pokedex/ViewController.swift"
+                  timestampString = "555861213.044456"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "15"
+                  endingLineNumber = "15"
+                  offsetFromSymbolStart = "143">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Pokedex.ViewController.init (coder : __ObjC.NSCoder) -&gt; Swift.Optional&lt;Pokedex.ViewController&gt;"
+                  moduleName = "Pokedex"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/elizavel/Documents/workspace/Pokedex/Pokedex/ViewController.swift"
+                  timestampString = "555861213.046038"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "15"
+                  endingLineNumber = "15"
+                  offsetFromSymbolStart = "76">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Pokedex/csv.swift"
+            timestampString = "555860794.973958"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "47"
+            endingLineNumber = "47"
+            landmarkName = "parseRows(fromLines:)"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Pokedex/ViewController.swift"
+            timestampString = "555861496.32893"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "39"
+            endingLineNumber = "39"
+            landmarkName = "parsePokemonCSV()"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
 </Bucket>

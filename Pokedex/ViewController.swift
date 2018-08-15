@@ -7,12 +7,18 @@
 //
 
 import UIKit
+import AVFoundation
 
-class ViewController: UIViewController, UICollectionViewDelegate,UICollectionViewDataSource {
+class ViewController: UIViewController, UICollectionViewDelegate,UICollectionViewDataSource,UISearchBarDelegate {
 
     @IBOutlet weak var collection: UICollectionView!
+    @IBOutlet weak var searchBar: UISearchBar!
     
+    var isInSearchMode = false;
     var pokemon: [Pokemon] = []
+    var searchPokemon: [Pokemon] = []
+    var musicPlayer: AVAudioPlayer!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,7 +27,21 @@ class ViewController: UIViewController, UICollectionViewDelegate,UICollectionVie
         collection.delegate = self
         
         parsePokemonCSV()
-        
+       // initAudio()
+    }
+    
+    
+    func initAudio(){
+        let path = NSURL( fileURLWithPath: NSBundle.mainBundle().pathForResource("music", ofType: "mp3")!)
+        do{
+            musicPlayer = try AVAudioPlayer(contentsOfURL: path)
+            musicPlayer.prepareToPlay()
+            musicPlayer.numberOfLoops = -1
+            musicPlayer.play()
+            
+        }catch let err as NSError{
+            print(err.debugDescription)
+        }
     }
     
     func parsePokemonCSV(){
@@ -76,6 +96,30 @@ class ViewController: UIViewController, UICollectionViewDelegate,UICollectionVie
     override func sizeForChildContentContainer(container: UIContentContainer, withParentContainerSize parentSize: CGSize) -> CGSize {
         
         return CGSize(width: 105,height: 105)
+    }
+    
+    
+    @IBAction func musicBtnPressed(sender: UIButton) {
+        
+        if(musicPlayer.playing){
+            musicPlayer.stop()
+            sender.alpha = 0.2
+        }else{
+            musicPlayer.play()
+            sender.alpha = 1.0
+        }
+        
+    }
+    
+    func searchBarTextDidEndEditing(searchBar: UISearchBar) {
+        if(searchBar.text != nil || searchBar.text != ""){
+            isInSearchMode = true
+            
+            
+            
+        }else{
+            isInSearchMode = false
+        }
     }
 
 }

@@ -7,11 +7,19 @@
 //
 
 import Foundation
+import Alamofire
 
 class Pokemon {
     
     private var _name: String!
     private var _pokedexId: Int!
+    private var _descriptionLbl: String!
+    private var _typeLbl: String!
+    private var _heightLbl: String!
+    private var _weightLbl: String!
+    private var _defenseLbl: String!
+    private var _baseAttackLbl: String!
+    private var _evolutionLbl: String!
     
     var name: String{
         return _name

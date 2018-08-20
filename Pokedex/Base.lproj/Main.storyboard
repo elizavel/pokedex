@@ -446,7 +446,9 @@
                         <outlet property="evolutionLbl" destination="WGX-eO-95H" id="ji1-Xp-b6a"/>
                         <outlet property="heightLbl" destination="S7z-fo-uyJ" id="3JA-7S-JcH"/>
                         <outlet property="nameLbl" destination="2Hp-N1-hUS" id="lt0-gW-Irs"/>
+                        <outlet property="pokeBioSegment" destination="ucv-Wi-EDY" id="2NA-gi-If1"/>
                         <outlet property="pokedexId" destination="sM0-Ka-G9r" id="69R-G6-YIP"/>
+                        <outlet property="thumbImg" destination="CJ8-eg-5jd" id="Ca6-XC-DXH"/>
                         <outlet property="typeLbl" destination="VJk-4b-WMh" id="fxE-Uh-h1S"/>
                         <outlet property="weightLbl" destination="x8N-DO-8df" id="zJ9-m8-Gdh"/>
                     </connections>

@@ -120,6 +120,25 @@ class Pokemon {
                     self._attack = "\(attack)"
                     print(self._attack)
                 }
+                
+                if let types = dict["types"] as? [Dictionary<String,AnyObject>]{
+                    
+                    var typesArray: String!
+                    typesArray = ""
+                    for i in 0..<types.count {
+                        
+                        if let typeArr = types[i]["type"] as? Dictionary<String,AnyObject>{
+                        
+                            if let type = typeArr["name"] as? String{
+                                typesArray =  "\(type.capitalizedString),\(typesArray)"
+                            }
+                        }
+                    }
+                    self._type = typesArray.substringToIndex(typesArray.endIndex.predecessor())
+                    print(self._type)
+                    
+                    
+                }
             }
             
             completed()

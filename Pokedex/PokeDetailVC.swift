@@ -28,6 +28,8 @@ class PokeDetailVC: UIViewController {
     
     override func viewDidLoad() {
     
+        nameLbl.text = pokemon.name.capitalizedString
+
         pokemon.downloadPokemonDetail{
             //print("did arrive here?")
 
@@ -37,14 +39,14 @@ class PokeDetailVC: UIViewController {
     
     func updateUI(){
         
-        nameLbl.text = pokemon.name.capitalizedString
         thumbImg.image = UIImage.init(named: "\(pokemon.pokedexId)")
         heightLbl.text = pokemon.height
         weightLbl.text = pokemon.weight
         baseAttackLbl.text = pokemon.attack
         pokedexId.text = "\(pokemon.pokedexId)"
-        
+        currentImg.image = UIImage.init(named: "\(pokemon.pokedexId)")
         typeLbl.text = pokemon.type
+        
         descriptionLbl.text = pokemon.description
         defenseLbl.text = pokemon.defense
         evolutionLbl.text = pokemon.evolution

@@ -130,7 +130,7 @@ class Pokemon {
                         if let typeArr = types[i]["type"] as? Dictionary<String,AnyObject>{
                         
                             if let type = typeArr["name"] as? String{
-                                typesArray =  "\(type.capitalizedString),\(typesArray)"
+                                typesArray =  "\(type.capitalizedString)/\(typesArray)"
                             }
                         }
                     }
